@@ -9,8 +9,7 @@ class SearchTitle extends Component {
         this.state = {
             searchedTitle: ''  
         }
-    }
-    
+    }   
       static defaultProps = {
         store: {
           catalogues: []
@@ -49,9 +48,8 @@ class SearchTitle extends Component {
                    <button className="moreDetailsButton">More Details</button>
                </Link>
              </li>
-           </ul> ));
-            
-    return(
+           </ul> ));           
+    return (
         <div className="search">
         <h2>Titles</h2>
           <select value={this.state.searchedTitle} onChange={this.searchTitle}>
@@ -63,7 +61,7 @@ class SearchTitle extends Component {
           </select>
         <section className="searchResults">{titleFilter}</section>
         </div>
-    )
+        )
     }
 }
     export default SearchTitle;

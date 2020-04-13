@@ -12,9 +12,8 @@ class SearchSelect extends Component {
     }   
       onSelect = e => {
         this.setState({ selectedSearchOption: e.target.value})};
-      render() {
-        const searchOptions = ['Title', 'Category', 'Rating'];
-      
+    render() {
+        const searchOptions = ['Title', 'Category', 'Rating'];  
     return(
         <section className="searchOptions">
         <label htmlFor="searchFilterOptions">Search by:</label>
@@ -23,8 +22,8 @@ class SearchSelect extends Component {
             {searchOptions.map((option, index) => {
            return (
              <option key={index} value={option}> {option} </option>
-           )
-         })}
+            )
+            })}
         </select>
           <section className="searchByCategory">
               {this.state.selectedSearchOption === 'Title' ? <SearchTitle /> : null}
@@ -32,7 +31,7 @@ class SearchSelect extends Component {
               {this.state.selectedSearchOption === 'Rating' ? <SearchRating /> : null}
           </section>
         </section>
-    )
+         )
       }
 }
     export default SearchSelect;

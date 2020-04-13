@@ -47,21 +47,20 @@ class SearchCategory extends Component {
                     <button className="moreDetailsButton">More Details</button>
                </Link>
              </li>
-            </ul> )); 
-            
-    return(
+            </ul> ));           
+    return (
         <div className="search">
           <h2>Categories</h2>
           <select value={this.state.searchedCategories} onChange={this.searchCategories}>
           {categoriesSorted.map((category, index) => {
            return (
              <option key={index} value={category}> {category} </option>
-           )
-         })}
+            )
+            })}
           </select>
         <section className="searchResults">{categoryFilter}</section>
         </div>
-    )
+         )
     }
 }
     export default SearchCategory;

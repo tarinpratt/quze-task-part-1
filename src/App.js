@@ -9,7 +9,6 @@ import CatalogueDetails from './CatalogueDetails';
 import './App.css';
 
 class App extends Component {
-  
       render() {
         return(
           <main className="App">
@@ -21,11 +20,6 @@ class App extends Component {
             <Route path='/catalogue/:courseId' component={CatalogueDetails} />
           </main>
         )
-
-      }
-       
-    
+      }   
   }
-
-
 export default App;

@@ -28,9 +28,8 @@ class SearchRating extends Component {
         const reducedRating = ratingList.reduce((unique, item) => {
           return unique.includes(item) ? unique : [...unique, item]
         }, []);
-        const ratingsSorted = reducedRating.sort();
-        
-   //filter functions
+        const ratingsSorted = reducedRating.sort();       
+//filter functions
           const ratingFilter = store.catalogues.filter(ratings => ratings.providerRatings == this.state.searchedRatings).map((filteredRating, index) => (
             <ul key={index} className="filteredResults">
                 <li>
@@ -49,19 +48,19 @@ class SearchRating extends Component {
                </Link>
              </li>
             </ul> ));       
-    return(
+    return (
         <div className="search">
           <h2>Ratings</h2>
           <select value={this.state.searchedRatings} onChange={this.searchRatings}>
           {ratingsSorted.map((rating, index) => {
            return (
              <option key={index} value={rating}> {rating} </option>
-           )
-         })}
+            )
+            })}
           </select>
         <section className="searchResults">{ratingFilter}</section>
         </div>
-    )
+        )
     }
 }
     export default SearchRating;
