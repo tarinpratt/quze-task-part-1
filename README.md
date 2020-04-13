@@ -1,4 +1,4 @@
-# **Quze Course Searc** # 
+# **Quze Course Search** # 
 
 Quze Course Search is an application built for filtering and searching through a catalogue of courses based off of a JSON file of course data. The project in total took 9 hours to create. 
 
