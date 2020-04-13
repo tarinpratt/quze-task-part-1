@@ -1,3 +1,17 @@
+# **Quze Course Searc** # 
+
+Quze Course Search is an application built for filtering and searching through a catalogue of courses based off of a JSON file of course data. Quze Course Search provides the user an option to search by course title, category, or rating. Once the user searches within a given search type, results are filtered and rendered for the user. Once rendered, users have to option to select a course for more details. This detailed page provides the title of the course, a short description of the course, a link to the course website, as well as the level, type, rating, and category of the course. The project in total took 9 hours to create. 
+
+
+## **Live Demo**
+
+[Live Demo](https://quze-task-part-1.pratttarin.now.sh/)
+
+## **Built With**
+* React
+* CSS
+* HTML
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

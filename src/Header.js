@@ -4,7 +4,7 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <h1>Catalogue Search</h1>
+                <h1>Quze Course Search</h1>
             </header>
         )
     }
