@@ -52,7 +52,7 @@ class SearchTitle extends Component {
     return (
         <div className="search">
         <h2>Titles</h2>
-          <select value={this.state.searchedTitle} onChange={this.searchTitle}>
+          <select className="searchTitleSelect" value={this.state.searchedTitle} onChange={this.searchTitle}>
           {titlesSorted.map((title, index) => {
            return (
              <option key={index} value={title}> {title} </option>

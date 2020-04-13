@@ -51,7 +51,7 @@ class SearchCategory extends Component {
     return (
         <div className="search">
           <h2>Categories</h2>
-          <select value={this.state.searchedCategories} onChange={this.searchCategories}>
+          <select className="searchTitleSelect" value={this.state.searchedCategories} onChange={this.searchCategories}>
           {categoriesSorted.map((category, index) => {
            return (
              <option key={index} value={category}> {category} </option>
