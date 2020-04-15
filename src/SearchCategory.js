@@ -29,6 +29,7 @@ class SearchCategory extends Component {
           return unique.includes(item) ? unique : [...unique, item]
         }, []);
         const categoriesSorted = reduced.sort();
+        categoriesSorted.pop();
 //filter function
           const categoryFilter = store.catalogues.filter(categories => categories.quzeCategory == this.state.searchedCategories).map((filteredCategory, index) => (
             <ul key={index} className="filteredResults">
@@ -47,11 +48,12 @@ class SearchCategory extends Component {
                     <button className="moreDetailsButton">More Details</button>
                </Link>
              </li>
-            </ul> ));           
+            </ul> ));   
     return (
         <div className="search">
           <h2>Categories</h2>
           <select className="searchTitleSelect" value={this.state.searchedCategories} onChange={this.searchCategories}>
+          <option value="none">Select a Category</option> 
           {categoriesSorted.map((category, index) => {
            return (
              <option key={index} value={category}> {category} </option>
